@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="ArduinoJson" displayName="ArduinoJson" projectFiles="true">
+      <logicalFolder name="ArduinoJson" displayName="ArduinoJson" projectFiles="true">
+        <logicalFolder name="Data" displayName="Data" projectFiles="true">
+          <itemPath>ArduinoJson/ArduinoJson/Data/Encoding.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/JsonBufferAllocated.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/JsonFloat.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/JsonInteger.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/JsonVariantAs.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/JsonVariantContent.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/JsonVariantDefault.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/JsonVariantType.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/List.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/ListConstIterator.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/ListIterator.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/ListNode.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/NonCopyable.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/ReferenceType.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Data/ValueSaver.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Deserialization"
+                       displayName="Deserialization"
+                       projectFiles="true">
+          <itemPath>ArduinoJson/ArduinoJson/Deserialization/Comments.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Deserialization/JsonParser.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Deserialization/JsonParserImpl.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Deserialization/StringWriter.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Polyfills" displayName="Polyfills" projectFiles="true">
+          <itemPath>ArduinoJson/ArduinoJson/Polyfills/attributes.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Polyfills/ctype.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Polyfills/isFloat.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Polyfills/isInteger.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Polyfills/math.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Polyfills/parseFloat.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Polyfills/parseInteger.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Serialization"
+                       displayName="Serialization"
+                       projectFiles="true">
+          <itemPath>ArduinoJson/ArduinoJson/Serialization/DummyPrint.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Serialization/DynamicStringBuilder.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Serialization/FloatParts.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Serialization/IndentedPrint.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Serialization/JsonPrintable.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Serialization/JsonSerializer.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Serialization/JsonSerializerImpl.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Serialization/JsonWriter.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Serialization/Prettyfier.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Serialization/StaticStringBuilder.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/Serialization/StreamPrintAdapter.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="StringTraits"
+                       displayName="StringTraits"
+                       projectFiles="true">
+          <itemPath>ArduinoJson/ArduinoJson/StringTraits/ArduinoStream.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/StringTraits/CharPointer.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/StringTraits/FlashString.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/StringTraits/StdStream.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/StringTraits/StdString.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/StringTraits/StringTraits.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="TypeTraits" displayName="TypeTraits" projectFiles="true">
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/EnableIf.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/FloatTraits.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/IsArray.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/IsBaseOf.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/IsChar.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/IsConst.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/IsFloatingPoint.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/IsIntegral.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/IsSame.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/IsSignedIntegral.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/IsUnsignedIntegral.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/IsVariant.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/RemoveConst.hpp</itemPath>
+          <itemPath>ArduinoJson/ArduinoJson/TypeTraits/RemoveReference.hpp</itemPath>
+        </logicalFolder>
+        <itemPath>ArduinoJson/ArduinoJson/Configuration.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/DynamicJsonBuffer.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonArray.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonArrayImpl.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonArraySubscript.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonBuffer.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonBufferBase.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonBufferImpl.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonObject.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonObjectImpl.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonObjectSubscript.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonPair.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonVariant.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonVariantBase.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonVariantCasts.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonVariantComparisons.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonVariantImpl.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonVariantOr.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/JsonVariantSubscripts.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/RawJson.hpp</itemPath>
+        <itemPath>ArduinoJson/ArduinoJson/StaticJsonBuffer.hpp</itemPath>
+      </logicalFolder>
+      <itemPath>ArduinoJson/ArduinoJson.h</itemPath>
+      <itemPath>ArduinoJson/ArduinoJson.hpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>jsonrpc.h</itemPath>
+      <itemPath>sqlite.h</itemPath>
+      <itemPath>tserver.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Makefile</itemPath>
+      <itemPath>jsonrpc.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>sqlite.cpp</itemPath>
+      <itemPath>test.db</itemPath>
+      <itemPath>tserver.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>ArduinoJson</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>`pkg-config --libs sqlite3`</linkerOptionItem>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="ArduinoJson/ArduinoJson.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Configuration.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/Encoding.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonBufferAllocated.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonFloat.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonInteger.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonVariantAs.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonVariantContent.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonVariantDefault.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonVariantType.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/List.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/ListConstIterator.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/ListIterator.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/ListNode.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/NonCopyable.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/ReferenceType.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/ValueSaver.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Deserialization/Comments.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Deserialization/JsonParser.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Deserialization/JsonParserImpl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Deserialization/StringWriter.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/DynamicJsonBuffer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonArray.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonArrayImpl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonArraySubscript.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonBuffer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonBufferBase.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonBufferImpl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonObject.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonObjectImpl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonObjectSubscript.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonPair.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariant.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariantBase.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariantCasts.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariantComparisons.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariantImpl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariantOr.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariantSubscripts.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/attributes.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/ctype.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/isFloat.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/isInteger.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/math.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/parseFloat.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/parseInteger.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/RawJson.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/DummyPrint.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/DynamicStringBuilder.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/FloatParts.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/IndentedPrint.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/JsonPrintable.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/JsonSerializer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/JsonSerializerImpl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/JsonWriter.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/Prettyfier.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/StaticStringBuilder.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/StreamPrintAdapter.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StaticJsonBuffer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StringTraits/ArduinoStream.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StringTraits/CharPointer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StringTraits/FlashString.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StringTraits/StdStream.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StringTraits/StdString.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StringTraits/StringTraits.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/EnableIf.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/FloatTraits.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsArray.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsBaseOf.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsChar.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsConst.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsFloatingPoint.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsIntegral.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsSame.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsSignedIntegral.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsUnsignedIntegral.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsVariant.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/RemoveConst.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/RemoveReference.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jsonrpc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="jsonrpc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sqlite.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sqlite.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="test.db" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tserver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tserver.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="ArduinoJson/ArduinoJson.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Configuration.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/Encoding.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonBufferAllocated.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonFloat.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonInteger.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonVariantAs.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonVariantContent.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonVariantDefault.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/JsonVariantType.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/List.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/ListConstIterator.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/ListIterator.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/ListNode.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/NonCopyable.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/ReferenceType.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Data/ValueSaver.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Deserialization/Comments.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Deserialization/JsonParser.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Deserialization/JsonParserImpl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Deserialization/StringWriter.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/DynamicJsonBuffer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonArray.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonArrayImpl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonArraySubscript.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonBuffer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonBufferBase.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonBufferImpl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonObject.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonObjectImpl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonObjectSubscript.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonPair.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariant.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariantBase.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariantCasts.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariantComparisons.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariantImpl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariantOr.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/JsonVariantSubscripts.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/attributes.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/ctype.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/isFloat.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/isInteger.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/math.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/parseFloat.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Polyfills/parseInteger.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/RawJson.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/DummyPrint.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/DynamicStringBuilder.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/FloatParts.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/IndentedPrint.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/JsonPrintable.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/JsonSerializer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/JsonSerializerImpl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/JsonWriter.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/Prettyfier.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/StaticStringBuilder.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/Serialization/StreamPrintAdapter.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StaticJsonBuffer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StringTraits/ArduinoStream.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StringTraits/CharPointer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StringTraits/FlashString.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StringTraits/StdStream.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StringTraits/StdString.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/StringTraits/StringTraits.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/EnableIf.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/FloatTraits.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsArray.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsBaseOf.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsChar.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsConst.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsFloatingPoint.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsIntegral.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsSame.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsSignedIntegral.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsUnsignedIntegral.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/IsVariant.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/RemoveConst.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="ArduinoJson/ArduinoJson/TypeTraits/RemoveReference.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jsonrpc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="jsonrpc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sqlite.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sqlite.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="test.db" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tserver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tserver.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
