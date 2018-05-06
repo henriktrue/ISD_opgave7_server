@@ -118,10 +118,10 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Makefile</itemPath>
+      <itemPath>database.db</itemPath>
       <itemPath>jsonrpc.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>sqlite.cpp</itemPath>
-      <itemPath>test.db</itemPath>
       <itemPath>tserver.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -551,6 +551,8 @@
       </item>
       <item path="Makefile" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="database.db" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="jsonrpc.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="jsonrpc.h" ex="false" tool="3" flavor2="0">
@@ -560,8 +562,6 @@
       <item path="sqlite.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="sqlite.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="test.db" ex="false" tool="3" flavor2="0">
       </item>
       <item path="tserver.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -984,6 +984,8 @@
       </item>
       <item path="Makefile" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="database.db" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="jsonrpc.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="jsonrpc.h" ex="false" tool="3" flavor2="0">
@@ -993,8 +995,6 @@
       <item path="sqlite.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="sqlite.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="test.db" ex="false" tool="3" flavor2="0">
       </item>
       <item path="tserver.cpp" ex="false" tool="1" flavor2="0">
       </item>

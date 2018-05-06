@@ -8,18 +8,19 @@ using namespace std;
 
 int jsonrpc_debug(char * jsonrpc) {
     DynamicJsonBuffer jsonBuffer;
-    //Allocates and populate a JsonObject called root from a JSON string.
-    //returns a reference to the new JsonObject
-    JsonObject& root = jsonBuffer.parseObject(jsonrpc);
-
+    /*Allocates and populate a JsonObject called root from a JSON string, 
+     * returning a reference to the newly created JsonObject
+    */
+    
     string jsonrpc_version = root["jsonrpc"];
     string method = root["method"];
     JsonVariant params = root["params"];
     long id = root["id"];
 
-    //Tells if the array is valid, which can be used:
-    //to check if the array was successfully parsed, or
-    //to check if the array was successfully allocated.
+    /*Tells if the array is valid or not, which can be used to check if the 
+     array is successfully parsed, or to check the array successfully allocated.
+    */ 
+   
     if (!root.success()) {
         cout << "Not a valid JSON object" << endl;
         return -1;
@@ -30,17 +31,11 @@ int jsonrpc_debug(char * jsonrpc) {
         return -1;
     }
 
-    cout << "----------JSONRPC-----------" << endl;
+    cout << "JSONRPC begins" << endl;
     cout << "Version: " << jsonrpc_version << endl;
 
-    if (id) {
-        cout << "ID: " << id << endl;
-    } else {
-        cout << "Notification" << endl;
-    }
-
     cout << "Method: " << method << endl;
-    //tests if params is JsonArray
+    //tests if argument is JsonArray
     if (params.is<JsonArray>()) {
         cout << "Parameter Array" << endl;
         int i = 0;
@@ -55,7 +50,7 @@ int jsonrpc_debug(char * jsonrpc) {
         }
     }
 
-    cout << "-------ENDJSONRPC-----------" << endl;
+    cout << "END OF JSONRPC" << endl;
     return 0;
 }
 
@@ -71,25 +66,19 @@ string jsonrpc_handler(string jsonrpc) {
     long id = root["id"];
 
     if (!root.success()) {
-        //cout << "Not a valid JSON object" << endl;
         syslog(LOG_INFO, "Not a valid JSON object, -32700\n");
         return "{\"jsonrpc\": \"2.0\", \"error\": {\"code\": -32700, \"message\": \"Parse error\"}, \"id\": null}\n";
     }
 
     if (jsonrpc_version != "2.0" || !method.length()) {
-        //cout << "Not a valid JSONRPC object" << endl;
         syslog(LOG_INFO, "Not a valid JSONRPC object, -32600\n");
         return "{\"jsonrpc\": \"2.0\", \"error\": {\"code\": -32600, \"message\": \"Invalid request\"}, \"id\": null}\n";
     }
 
-    if (method == "Read_Latest_Temp") {
-        //For debugging purposes.
-        //cout << "Temp was requested" << endl;
-        syslog(LOG_INFO, "Temp was requested\n");
+    if (method == "Read_Latest_Val") {
         root["result"] = sqlite_getlatest();
         
-    } else if (method == "Store_Temp") {
-        syslog(LOG_INFO, "Storing the temperature\n");
+    } else if (method == "Store_Val") {
         sqlite_insert(params);
     }else{
          return "{\"jsonrpc\": \"2.0\","

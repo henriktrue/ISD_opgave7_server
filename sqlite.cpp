@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ SQL has temperature entrys, since its copied from working module
+ * (Im no SQL expert)
  */
 
 #include <stdlib.h>
@@ -42,10 +41,10 @@ static int callback(void *data, int argc, char **argv, char **azColName) {
 }
 
 void sqlite_opendb() {
-    rc = sqlite3_open("test.db", &db);
+    rc = sqlite3_open("database.db", &db);
 
     if (rc) {
-        syslog(LOG_ERR, "Can't open database: %s",sqlite3_errmsg(db));
+        syslog(LOG_ERR, "Cannot open database: %s",sqlite3_errmsg(db));
         exit(1);
     }
 
@@ -82,7 +81,7 @@ void sqlite_insert(float value) {
     // Create INSERT statement
     sql = buffer;
     
-    //try to lock. Returns 0 when succesfulll
+    //try to lock. Returns 0 if succesfulll
     if (pthread_mutex_lock(&lock) == 0) {
     // Execute SQL statement
     rc = sqlite3_exec(db, sql, NULL, 0, &zErrMsg);    
