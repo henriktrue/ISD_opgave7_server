@@ -1,17 +1,3 @@
-/*
- ============================================================================
- Name        : tserver.c
- Author      : BEEJ's guide to network programming, Tobias, Jens
- Version     : 2.0
- Copyright   : None
- Date 		 : 29/5-2017
- Modified    : 30/1-2018
- Description : This tserver program will accept multiple incoming connections
- and they will echo back the string send from the client.
- ============================================================================
- *
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -43,44 +29,27 @@ enum state {
     notSet, Set
 };
 
-//Stores the filedescriptors. listen on sock_fd
+//Stores filedescriptors. listen on sock_fd
 int sockfd;
 std::string(*handle_callback)(std::string);
 
 void tserver_init(const char * interface, const char *port, std::string(*handler)(std::string)) {
 
     handle_callback = handler;
-    //Linked lists. Hints is to store our settings. servinfo is to collect
-    //information about a particular host name.
     //p i used to scroll through servinfo.
     struct addrinfo hints, *servinfo, *p;
 
-    //Initialize hints.
-    //Some fields we need to set.
-    //All the other fields in the structure pointed to by hints must
-    //contain either 0 or a NULL pointer,  as  appropriate.
-    //there needs to be zero's for the "getaddrinfo" function.
     memset(&hints, 0x00, sizeof (hints));
 
     //The  hints  argument  points to an addrinfo structure that specifies
     //criteria for selecting the socket address
-    //structures returned in the list pointed to by res
 
-    //It can use both IPv4 or IPv6
+    //can use both IPv4 or IPv6
     hints.ai_family = AF_UNSPEC;
-    //For streaming socket. Write SOCK_DGRAM for datagram.
     hints.ai_socktype = SOCK_STREAM;
     //Use my IP
     hints.ai_flags = AI_PASSIVE;
 
-    //Allocates and initialize a linked list (servinfo)
-    //of addrinfo structures. One for each network address that matches
-    //node and service and returns a pointer to
-    //the start of that list to servinfo.
-    //Each contains Internet address that can be specified in a
-    //call to bind or connect
-    //DNS and service name lookup , fills the structs we need.
-    //Returns zero on success.
     int rv;
     if ((rv = getaddrinfo(interface, port, &hints, &servinfo)) != 0) {
         //gai_strerror returns error code from getaddrinfo.
@@ -88,18 +57,15 @@ void tserver_init(const char * interface, const char *port, std::string(*handler
         exit(1);
     }
 
-    //Loop through all the results and bind to the first we can
+    //Loop through all results and bind to first possible
     for (p = servinfo; p != NULL; p = p->ai_next) {
-        //socket creates an endpoint for communication. Returns descriptor.
         //-1 on error
         if ((sockfd = socket(p->ai_family, p->ai_socktype, p->ai_protocol))
                 == -1) {
             syslog(LOG_ERR, "Cannot create socket");
             continue;
         }
-        //every packet with destination p->ai_addr should be forwarded to
-        //sockfd.socket needs to be associated with a port on local machine.
-        //bind sets errno to the error if it fails.
+
         if (bind(sockfd, p->ai_addr, p->ai_addrlen) == -1) {
             close(sockfd);
             syslog(LOG_ERR, "Cannot bind");
@@ -111,7 +77,7 @@ void tserver_init(const char * interface, const char *port, std::string(*handler
 
     freeaddrinfo(servinfo);
 
-    //If the linked list has reached the end without binding.
+    //If linked list has reached the end without binding.
     if (p == NULL) {
         syslog(LOG_ERR, "Sockfd Could not associate with port. Closing down");
         exit(1);
@@ -119,8 +85,6 @@ void tserver_init(const char * interface, const char *port, std::string(*handler
 
     //Listen for connections on a socket.
     //sockfd is marked as passive, one used to accept incoming connection
-    //requests using accept.
-    //listen also sets errno on error.
     if (listen(sockfd, BACKLOG) == -1) {
         syslog(LOG_ERR, "Error on listen");
         exit(1);
@@ -137,8 +101,6 @@ void tserver_init(const char * interface, const char *port, std::string(*handler
 
     //&threads = unique identifier for created thread.
     //connection_handling = start routine
-    // (void*) argument for our start routine, you can send one as a
-    //void pointer.
     int rc = pthread_create(&threads, &attr, listen_thread, NULL);
     if (rc) {
         syslog(LOG_ERR, "Couldn't create listen thread");
@@ -149,10 +111,8 @@ void tserver_init(const char * interface, const char *port, std::string(*handler
 }
 
 void * listen_thread(void * p) {
-    //Endless loop that awaits connections
     while (1) {
         //storage for the size of the connected address.
-        // connector's address information
         struct sockaddr_storage their_addr;
         socklen_t sin_size = sizeof (their_addr);
 
@@ -174,8 +134,6 @@ void * listen_thread(void * p) {
 
         //&threads = unique identifier for created thread.
         //connection_handling = start routine
-        // (void*) argument for our start routine, you can send one as a
-        //void pointer. We send the file descriptor for the new connection.
         int rc = pthread_create(&threads, &attr, connection_handling,
                 (void*) new_fd);
         if (rc) {
